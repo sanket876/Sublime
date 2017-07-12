@@ -1,10 +1,10 @@
 # Sublime
 ---------------
 Sync sublime settings across all machines.
-I just set up a good solution for this, it requires dropbox. I am currently using this to sync plugins and settings across ~5 different sublime installs on windows, linux, osx, and a few vm's.
 
-Step 1: use PackageControl to manage all your plugins, its awesome.
-Step 2: Add a "Sublime" directory to your root drop-box directory (I replicated the full directory structure for the hell of it, {DropBox}/Sublime/Packages/User). Make sure sublime is closed, and move the contents of {SublimeRoot}/Packages/User in to the dropbox directory you just made. Delete {SublimeRoot}/Packages/User, and replace it with a symlink that points to {DropBox}/Sublime/Packages/User.
+## Steps
+** Step 1 **: use PackageControl to manage all your plugins, its awesome.
+** Step 2 **: Add a "Sublime" directory to your root drop-box directory (I replicated the full directory structure for the hell of it, {DropBox}/Sublime/Packages/User). Make sure sublime is closed, and move the contents of {SublimeRoot}/Packages/User in to the dropbox directory you just made. Delete {SublimeRoot}/Packages/User, and replace it with a symlink that points to {DropBox}/Sublime/Packages/User.
 Use this same process on every computer where you use sublime, it accomplishes 2 things.
 
 1) The contents of your User/ directory are synced, so all your custom settings are the same across machines.
